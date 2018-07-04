@@ -4,6 +4,6 @@ before script:
   - sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
 script:
   - make
-
+  - ./test
 after_success:
   - cat TestDosum-Results.xml
