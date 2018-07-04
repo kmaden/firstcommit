@@ -1,7 +1,11 @@
 language: c
 sudo: false # only for faster builds
-before script:
-  - sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
+
+addons:
+  apt:
+    packages:
+      - libcunit1
+      -libcunit1-dev
 script:
   - make
   - ./test
